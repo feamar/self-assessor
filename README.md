@@ -11,7 +11,8 @@ Copy `.github/skills/software-delivery-assessment/` to your target repository or
 - [Skill instructions](.github/skills/software-delivery-assessment/SKILL.md)
 - [Metric definitions](.github/skills/software-delivery-assessment/references/metrics.md)
 - [Active checks](.github/skills/software-delivery-assessment/references/dimensions.md)
-- [Architecture decision records](docs/adr/README.md)
+- [Architecture decision records — active and inactive](docs/adr/README.md)
+- [Where the assessment began (ADR-000)](docs/adr/000-original-assessment-rationale.md)
 
 The skill operates read-only unless additional permissions are granted. Missing measurements remain unknown.
 

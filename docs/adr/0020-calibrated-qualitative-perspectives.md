@@ -1,6 +1,6 @@
 # ADR-0020: Qualitative perspective judgments with evidence ceilings
 
-**Status:** Accepted
+**Status:** Superseded / inactive — see [ADR-0025](0025-consolidated-judgment-and-report-policy.md)
 
 ## Context
 
@@ -17,3 +17,5 @@ Conventional expects strong engineering and SRE with human effort and whole-code
 No composite score, formula, AI adoption bonus or invented metrics. Evidence, customer results, cost, code/test quality and critical risks determine the explanation. Numerical calibration remains an internal guardrail unless requested.
 
 **Updated by [ADR-0024](0024-all-perspectives-separate-outcomes.md):** the one-selected-perspective execution rule is superseded. All three perspectives now run; the evidence calibration remains valid.
+
+**Historical note:** ADR-0025 is now the authoritative home of the surviving evidence-calibration rules and the three-perspective workflow. This file is retained for the audit trail, not as current instructions.

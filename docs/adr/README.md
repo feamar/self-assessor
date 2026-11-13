@@ -1,11 +1,12 @@
-# Assessment simplification decisions
+# Architecture decision records
 
-These are **architecture decision records**, not agent instructions. They document why dimensions from the initial 30-dimension inventory were removed or reframed, avoiding unnecessary process metrics.
+This is the **authoritative status index**. Decisions in **Active** govern the current assessment model. **Inactive** holds historical baselines and decisions replaced by later ADRs. No historical file is deleted: superseded records remain accessible with a pointer to their successor. "Retired dimension" inside an **active ADR** means its *removal is still in force*; it does **not** mean that the decision itself is inactive.
 
-- **Retired**: no longer a standalone assessment dimension.
-- **Reframed**: metric discarded; consequential concern remains as an evidence question.
+## Active
 
-| Original ID | Decision | ADR |
+### Metric and dimension simplification
+
+| Original dimension | Current decision | ADR |
 |---|---|---|
 | D05 | Retired | [0001-d05-deployment-rework-rate.md](0001-d05-deployment-rework-rate.md) |
 | D06 | Retired | [0002-d06-metric-publication-and-transparency.md](0002-d06-metric-publication-and-transparency.md) |
@@ -24,37 +25,29 @@ These are **architecture decision records**, not agent instructions. They docume
 | D29 | Retired | [0015-d29-delivery-automation-and-manual-intervention.md](0015-d29-delivery-automation-and-manual-intervention.md) |
 | D30 | Reframed | [0016-d30-operational-monitoring-alerting-and-sre-practice.md](0016-d30-operational-monitoring-alerting-and-sre-practice.md) |
 
-## Retained specialist-metric exceptions
+### Retained exceptions and metric interpretation
 
-| IDs | Decision | ADR |
+| Decision | ADR |
+|---|---|
+| Keep non-universal D09 and D14 as optional diagnostics | [ADR-0017](0017-retain-non-universal-diagnostics.md) |
+| Distinguish outcome-oriented from hard-to-game and define 18 active checks | [ADR-0019](0019-separate-outcome-orientation-from-gameability.md) |
+
+### Governance, reports and agent actions
+
+| Decision | ADR |
+|---|---|
+| Record every accepted architectural decision in an ADR | [ADR-0018](0018-document-all-architectural-decisions.md) |
+| Produce bounded agent improvement skills from justified findings | [ADR-0022](0022-agent-improvement-skills.md) |
+| Provide candid criticism, earned praise and precise recognition of excellence | [ADR-0023](0023-candid-evidence-specific-feedback.md) |
+| Assess all three perspectives; preserve separate Markdown outcomes and display the selected one | [ADR-0024](0024-all-perspectives-separate-outcomes.md) |
+| Active judgment calibration and three-paragraph report policy | [ADR-0025](0025-consolidated-judgment-and-report-policy.md) |
+
+## Inactive — historical or superseded
+
+| ADR | Inactive reason | Superseding current decision |
 |---|---|---|
-| D09, D14 | Retained as optional non-universal diagnostics | [ADR-0017](0017-retain-non-universal-diagnostics.md) |
+| [ADR-000](000-original-assessment-rationale.md) | Historical origin: earliest verified matrix had **24** dimensions (first 20 individually explained), not a separately verifiable 20-metric baseline | Current [metric criteria](../../.github/skills/software-delivery-assessment/references/metrics.md) and [active dimension decisions](#metric-and-dimension-simplification) |
+| [ADR-0020](0020-calibrated-qualitative-perspectives.md) | Superseded; original one-selected-perspective rule obsolete | [ADR-0025](0025-consolidated-judgment-and-report-policy.md), [ADR-0024](0024-all-perspectives-separate-outcomes.md) |
+| [ADR-0021](0021-three-paragraph-report.md) | Superseded; original single-report framing replaced by three independent reports | [ADR-0025](0025-consolidated-judgment-and-report-policy.md) |
 
-D03 remains a conditional diagnostic: its measurement is straightforward where the environment maintains reliable linked events; otherwise ask a focused question or report unknown.
-
-## Repository governance
-
-| Decision | ADR |
-|---|---|
-| Record every accepted architectural decision alongside the change | [ADR-0018](0018-document-all-architectural-decisions.md) |
-
-## Metric-strength interpretation
-
-| Decision | ADR |
-|---|---|
-| Distinguish outcome orientation from hard-to-game; name the 18 dimensions correctly | [ADR-0019](0019-separate-outcome-orientation-from-gameability.md) |
-
-## Perspective judgments, reports and agent actions
-
-| Decision | ADR |
-|---|---|
-| Replace weighted scores with calibrated qualitative perspective judgments | [ADR-0020](0020-calibrated-qualitative-perspectives.md) |
-| Limit executive assessment to three paragraphs | [ADR-0021](0021-three-paragraph-report.md) |
-| Draft independent agent skills for justified improvements | [ADR-0022](0022-agent-improvement-skills.md) |
-
-## Feedback and outcome artifacts
-
-| Decision | ADR |
-|---|---|
-| Give candid evidence-specific criticism, earned praise and exact reasons for excellence | [ADR-0023](0023-candid-evidence-specific-feedback.md) |
-| Always evaluate all three perspectives, store separate Markdown outcomes and show the user's selection | [ADR-0024](0024-all-perspectives-separate-outcomes.md) |
+**Historical lineage:** 24 documented initial dimensions → 25 after transparency was added → 30 in the expanded pilot → 18 active checks after simplification. The historical ADR-000 is descriptive, **not a directive to restore old measures**.

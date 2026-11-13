@@ -17,3 +17,5 @@ The assessed repository remains read-only unless writing is authorized. Without 
 ## Consequences
 
 The model does additional perspective reasoning once per assessment but preserves all findings for later comparison. This decision **supersedes only the earlier one-selected-perspective execution rule** in ADR-0020 and ADR-0021. Their evidence thresholds and three-paragraph limit remain in force.
+
+**Clarification:** [ADR-0025](0025-consolidated-judgment-and-report-policy.md) consolidates the still-active calibration and report-length rules, so ADR-0020 and ADR-0021 are now inactive historical records. The all-perspectives requirement here remains active.

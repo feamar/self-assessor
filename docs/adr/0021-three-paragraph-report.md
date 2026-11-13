@@ -1,6 +1,6 @@
 # ADR-0021: Three-paragraph leadership report
 
-**Status:** Accepted
+**Status:** Superseded / inactive — see [ADR-0025](0025-consolidated-judgment-and-report-policy.md)
 
 ## Context
 
@@ -15,3 +15,5 @@ Default report is **at most three paragraphs and one page**: (1) qualitative gra
 The assessment remains decision-ready and explicit about missing outcomes. A concise report cannot be mistaken for an exhaustive technical audit.
 
 **Updated by [ADR-0024](0024-all-perspectives-separate-outcomes.md):** the three-paragraph format applies to each of three outcome files; only the user-selected result is shown.
+
+**Historical note:** ADR-0025 is now authoritative for the three-paragraph limit as applied to each of the three outcome files. This original remains for traceability only.
