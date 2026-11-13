@@ -1,15 +1,16 @@
 # Self Assessor
 
-An evidence-first software delivery quality assessment skill for GitHub Copilot and compatible coding agents.
+A concise, evidence-first [software delivery assessment skill](.github/skills/software-delivery-assessment/SKILL.md) for GitHub Copilot and compatible coding agents.
 
-## Install
+It starts with **real delivery outcomes**, investigates **diagnostic evidence** only when useful, and checks **critical assurance risks**. It supports conventional, AI-assisted and AI-driven perspectives without an arbitrary combined maturity score.
 
-Copy [the skill folder](.github/skills/software-delivery-assessment/) into your target repository at `.github/skills/software-delivery-assessment/` (or a supported personal skills location).
+## Use
 
-## Run
+Copy `.github/skills/software-delivery-assessment/` to your target repository or a supported personal skills folder. Ask the agent to assess delivery outcomes first and ask only questions that resolve important gaps.
 
-Ask your agent: **“Assess this service using the software-delivery-assessment skill. Inspect evidence first, ask only targeted questions about gaps, and report conventional, AI-assisted and AI-driven perspectives.”**
+- [Skill instructions](.github/skills/software-delivery-assessment/SKILL.md)
+- [Metric definitions](.github/skills/software-delivery-assessment/references/metrics.md)
+- [Active checks](.github/skills/software-delivery-assessment/references/dimensions.md)
+- [Architecture decision records](docs/adr/README.md)
 
-The skill evaluates 30 dimensions and separately reviews code and test quality. It is read-only by default; external systems and test execution require approval. Missing evidence is marked unknown rather than scored as failure.
-
-See [SKILL.md](.github/skills/software-delivery-assessment/SKILL.md) and [the skill README](.github/skills/software-delivery-assessment/README.md).
+The skill operates read-only unless additional permissions are granted. Missing measurements remain unknown.

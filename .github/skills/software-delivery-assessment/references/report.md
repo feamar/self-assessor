@@ -1,30 +1,10 @@
-# Report format
+# Concise assessment report
 
-**Default: one concise decision-ready assessment.** Offer detailed evidence ledgers only on request.
+1. **Scope:** service, repository/revision, assessment window, demand boundary, sources and major unknowns.
+2. **Primary outcomes:** actual lead time, deployment frequency, recovery time and user unavailability, plus naturally defined first-pass acceptance/change disruption where available. Show values, distributions/counts, period and source; unknown stays unknown.
+3. **Diagnostic findings:** only consequential explanations, including conditional D03/D09 where naturally measurable; assess **code quality** and **test quality** separately.
+4. **Assurance:** short status of relevant critical checks (effective / concerning / unknown / N/A), with evidence. Do not hide unacceptable security/privacy/release risks behind strong output metrics.
+5. **Perspectives:** conventional, AI-assisted, AI-driven—same observed outcomes, differing controls; no composite score.
+6. **Next actions:** 3–5 prioritized, concrete steps.
 
-## Scope
-
-Service/repository/revision, demand-to-delivery boundary, assessment period, available sources and consequential gaps.
-
-## Layer 1 — Primary outcomes
-
-| Metric | Observed value / distribution | Period and sample size | Definition/source | Confidence / unknowns |
-|---|---|---|---|---|
-
-Include end-to-end lead time, deployment frequency, recovery, user-facing unavailability, first-pass acceptance and change-related disruption when relevant. **Do not substitute arbitrary 0–4 maturity scores for measured values.** Describe trends and limitations.
-
-## Layer 2 — Diagnostic findings
-
-List the few findings that best explain outcomes and opportunities. Distinguish **code quality** from **test quality**. Reference exact evidence and note where an observation is provisional. Use the 30 dimensions as a checklist for targeted investigation, not an equally weighted total.
-
-## Layer 3 — Assurance controls
-
-Show effective/broken/unknown critical controls, consequences and evidence. Explicitly flag security, privacy, supply chain, release safety and AI permission risks even if delivery outcomes look good.
-
-## Perspectives
-
-Summarize **conventional**, **AI-assisted** and **AI-driven** capability using the same outcome data plus perspective-specific assurance. No arbitrary weighted combined score. Conclude with 3–5 actionable priorities.
-
-## Optional appendix
-
-For each relevant dimension: status, supporting evidence IDs, confidence and concise rationale. If 0–4 rubric scores are used diagnostically, do **not** average them. On request include evidence types, paths/lines, run IDs, exact periods, commands actually run with consent, disagreements, and calculation details. Unavailable information is unknown, never zero.
+Detailed evidence ledger or all applicable check statuses **only on request**. Never require evidence for retired dimensions, numerical 0–4 ratings, or a complete questionnaire.
