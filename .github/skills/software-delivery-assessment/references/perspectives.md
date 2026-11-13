@@ -23,7 +23,7 @@ Developers can delegate investigation, implementation, testing and routine work.
 
 ## AI-driven: highest bar and measurable results
 
-Agents perform most work. Demand the strongest demonstrated outcomes and trends, independent test oracles, bounded privileges, provenance, non-bypassable release controls, recovery and telemetry. Without measured output, give a sharply limited verdict (internal ceiling 4) and recommend a rigorous **measurement/instrumentation agent skill** with event definitions, data provenance, baselines and ongoing review.
+Agents perform most work. Demand the strongest demonstrated outcomes and trends, independent test oracles, bounded privileges, provenance, non-bypassable release controls, recovery and telemetry. Without measured output, give a sharply limited verdict (internal ceiling 4) and **explain the need for rigorous measurement/instrumentation** with event definitions, data provenance, baselines and ongoing review. **Do not draft an agent skill before reporting; offer that as an optional subsequent step.**
 
 ## Be candid, proportionate and useful
 

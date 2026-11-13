@@ -1,6 +1,6 @@
 # ADR-0022: Draft agent skills for evidenced improvements
 
-**Status:** Accepted
+**Status:** Superseded / inactive — see [ADR-0028](0028-evidence-first-report-before-optional-agent-skills.md)
 
 ## Context
 
@@ -15,3 +15,5 @@ Do not write skill files to the assessed repository without explicit permission,
 ## Consequences
 
 Findings translate into independently verifiable tasks without compromising the read-only assessment or report brevity.
+
+**Historical note:** [ADR-0028](0028-evidence-first-report-before-optional-agent-skills.md) supersedes the default skill-generation step. Future agent instructions are **offered only after reports** and drafted solely when explicitly requested.

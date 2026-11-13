@@ -37,7 +37,7 @@ This is the **authoritative status index**. Decisions in **Active** govern the c
 | Decision | ADR |
 |---|---|
 | Record every accepted architectural decision in an ADR | [ADR-0018](0018-document-all-architectural-decisions.md) |
-| Produce bounded agent improvement skills from justified findings | [ADR-0022](0022-agent-improvement-skills.md) |
+| Gather and corroborate evidence first; offer agent skills only after reporting and explicit opt-in | [ADR-0028](0028-evidence-first-report-before-optional-agent-skills.md) |
 | Provide candid criticism, earned praise and precise recognition of excellence | [ADR-0023](0023-candid-evidence-specific-feedback.md) |
 | Assess all three perspectives; preserve separate Markdown outcomes and display the selected one | [ADR-0024](0024-all-perspectives-separate-outcomes.md) |
 | Active judgment calibration and three-paragraph report policy | [ADR-0025](0025-consolidated-judgment-and-report-policy.md) |
@@ -51,5 +51,6 @@ This is the **authoritative status index**. Decisions in **Active** govern the c
 | [ADR-0000](0000-original-assessment-rationale.md) | Historical 30-dimension v1.3 baseline and its reasons; earlier 24 → 25 → 30 lineage. **Inactive**, not a current scoring policy | Current [metric criteria](../../.github/skills/software-delivery-assessment/references/metrics.md) and [active dimension decisions](#metric-and-dimension-simplification) |
 | [ADR-0020](0020-calibrated-qualitative-perspectives.md) | Superseded; original one-selected-perspective rule obsolete | [ADR-0025](0025-consolidated-judgment-and-report-policy.md), [ADR-0024](0024-all-perspectives-separate-outcomes.md) |
 | [ADR-0021](0021-three-paragraph-report.md) | Superseded; original single-report framing replaced by three independent reports | [ADR-0025](0025-consolidated-judgment-and-report-policy.md) |
+| [ADR-0022](0022-agent-improvement-skills.md) | Superseded: automatic drafting of agent skills before/alongside reports is no longer the default | [ADR-0028](0028-evidence-first-report-before-optional-agent-skills.md) |
 
 **Historical lineage:** 24 documented initial dimensions → 25 after transparency was added → 30 in the expanded pilot → 18 active checks after simplification. The historical ADR-0000 is descriptive, **not a directive to restore old measures**.

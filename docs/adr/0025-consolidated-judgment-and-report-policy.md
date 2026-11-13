@@ -26,3 +26,5 @@ Outcome documents or agent skills are **drafted as separate artifacts** if targe
 ## Consequences
 
 ADR-0020 and ADR-0021 become **inactive/superseded** without losing their historical record. This ADR is the active source for their surviving calibration and reporting constraints. ADR-0023 continues to govern candid feedback and ADR-0024 the all-perspective output workflow.
+
+**Refined by [ADR-0028](0028-evidence-first-report-before-optional-agent-skills.md):** evidence discovery and the three completed judgments precede any **optional** agent-skill drafting; the developer must opt in after the report.

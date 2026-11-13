@@ -1,0 +1,23 @@
+# ADR-0028: Evidence gathering and reporting precede optional agent instructions
+
+**Status:** Accepted — active  
+**Supersedes:** [ADR-0022](0022-agent-improvement-skills.md) (automatic/default skill generation)  
+**Refines:** [ADR-0025](0025-consolidated-judgment-and-report-policy.md), [ADR-0026](0026-remote-url-bootstrap.md)
+
+## Context
+
+An evidence-based software delivery judgment is only as good as the **actual historical evidence** available. A lead developer working in Visual Studio or VS Code may have easy access to CI/CD, code quality reporting, SonarQube, deployment pipelines, tests and operational data which Copilot cannot infer from source files alone. Generating remediation skills prematurely distracts from investigating facts, can amplify assumptions, and makes the primary deliverable—the leadership report—less trustworthy.
+
+## Decision
+
+**Priority 1 — find and verify evidence.** Inspect accessible workspace material, then proactively ask the developer a concise question identifying useful missing sources, particularly **historical CI/CD pipeline/deployment runs**, **SonarQube and other code quality reports**, actual test and quality-gate outcomes, and (where available) SLO dashboards, incident history, issue/requirement records and user outcomes. Accept links, read-only access with approval or safe exports. Do not demand credentials, use a large mandatory questionnaire or insist on every data source. Seek targeted follow-ups only when evidence could materially change the judgment.
+
+Corroborate historical execution and production results rather than equating a pipeline file, scanner presence or vendor rating with effectiveness. Record provenance, sample periods and consequential unknowns. Where access is declined or unavailable, finish the report honestly with clearly constrained confidence, not invented results or indefinite delay.
+
+**Priority 2 — finish the assessment.** Produce all three perspective-specific, concise Markdown judgments and display the developer's selected perspective, in accordance with ADRs 0024 and 0025. If AI-driven outcome evidence is absent, **recommend measurements in the report**, but do not automatically create an agent skill.
+
+**Priority 3 — optional follow-up only.** **After** the full report is complete and presented, offer to write instructions/SKILL.md files for future agents if the developer wishes. Generate them **only after explicit opt-in**. Writing them into the assessed repository or executing remediation requires separate authorization. The previous default duty in ADR-0022 to prepare agent skills during assessment is removed.
+
+## Consequences
+
+The primary output is a **credible, candid report based on real data**. Conversations may include one early source-location question and a few consequential follow-ups. Agent improvements remain possible but are secondary and never distract from evidence collection. ADR-0022 is classified inactive/superseded; active and inactive sections of the ADR index reflect this change.

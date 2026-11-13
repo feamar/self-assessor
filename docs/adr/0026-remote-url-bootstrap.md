@@ -27,3 +27,5 @@ The usual start is one line and does not require manually copying the skill into
 The root README and START.md are operational entrypoints; this ADR records the design decision, while the existing skill and ADRs 0023–0025 continue to govern assessment content and reporting.
 
 **Clarified by [ADR-0027](0027-high-reasoning-preflight-both-ides.md):** the developer may use **Microsoft Visual Studio or VS Code**, and both require a High-reasoning startup check before the assessment. VS Code's `#fetch` mechanism is not assumed to exist in Visual Studio.
+
+**Refined by [ADR-0028](0028-evidence-first-report-before-optional-agent-skills.md):** remote startup now actively seeks CI/CD, SonarQube and operational evidence and completes the three reports **before** offering optional agent instructions. It does not generate agent skills automatically.
