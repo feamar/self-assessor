@@ -1,6 +1,6 @@
 # Prepare agent-ready improvement skills
 
-Write **complete, focused SKILL.md artifacts**, not vague suggestions, for evidenced high-value improvements that agents could execute. Keep them **separate from the three-paragraph judgment**. Normally prepare at most 1–3 independent tasks, never generic boilerplate.
+Write **complete, focused SKILL.md artifacts**, not vague suggestions, for evidenced high-value improvements. Keep them **separate from the three perspective outcome files**. Consolidate overlapping findings into at most 1–3 independent tasks across the assessment. For excellent delivery without meaningful deficiencies, do not invent remedial tasks.
 
 For each task, draft `.github/skills/<short-task-name>/SKILL.md` with valid `name` and `description` frontmatter, then:
 

@@ -1,28 +1,35 @@
 # Calibrated perspective-specific judgments
 
-Choose **one perspective** (conventional by default). Issue a **qualitative judgment with rationale**, not an arbitrary arithmetic score, weighted perspective average or dimension roll-up. Only state a numeric grade when explicitly asked.
+**Always evaluate all three perspectives in each run.** Share the evidence collection, but reason separately for conventional, AI-assisted and AI-driven delivery. Each perspective produces its own qualitative judgment. The user's choice determines which judgment is **displayed**, not which are evaluated. Default display: conventional. No weighted formulas, maturity averages or numeric grades unless expressly requested.
 
-## Internal 0–10 calibration (never a formula)
+## Internal 0–10 calibration (not default output)
 
-| Evidence situation | Highest defensible indicative grade |
+| Evidence | Maximum indicative grade |
 |---|---|
-| No credible **outcome-oriented evidence**, even with impressive practices or interviews | **4/10**: actual delivery effectiveness is not demonstrated |
-| Credible **current objective outcomes**, but no documented sustained track record of success | **8/10**: judge code, tests, practices, security and operational capability pragmatically |
-| Strong, independently checkable **history of repeated success** in production and user outcomes | **9/10** is possible, not automatic |
-| Exceptional, sustained results comparable in substance to strong **Google engineering circa the mid-2010s and mature Google SRE** | **10/10**, exceptionally |
+| No credible outcome-oriented evidence | **4/10**, even with plausible practices or interviews |
+| Credible current outcomes but no documented sustained success | **8/10** |
+| Strong, independently checkable history of repeated success | **9/10** possible, not automatic |
+| Exceptional sustained results comparable in substance to strong Google engineering circa the mid-2010s and mature Google SRE | **10/10**, exceptionally |
 
-Ceilings are guardrails, not targets. *Without evidence* in the 8 ceiling means **without a long-term documented trail**, **not without outcome evidence** (which caps the grade at 4). The exact grade between 4 and 8 is less important than describing successful outcomes, process reliability and limitations. A functioning product, apparently low cost, fast releases or known happy customer matters when credible, but does not alone establish repeatability and improvement. A critical unmitigated risk can warrant a much weaker verdict than the ceiling.
+These are ceilings, not a calculation. The 8 ceiling **requires some objective outcome evidence**; absent that, the 4 ceiling applies. Critical risks can justify weaker judgments.
 
-## Conventional — demanding human-led engineering
+## Conventional: demanding human-led delivery
 
-Benchmark strong Google-style engineering practices from roughly ten years ago and mature SRE: maintainable code, effective testing and review, reproducible builds/releases, security, monitoring, clear user-facing SLOs, operational response, rollback, incident learning and verified outcomes. Human developers have no agent leverage but may understand the whole codebase more deeply. Acknowledge workload; **do not lower reliability or security expectations**.
+Judge against strong Google-style engineering of roughly ten years ago and mature SRE: reliable, maintainable code, meaningful tests and review, reproducible releases, security, operational observability, user-facing service levels, recovery, learning and demonstrated outcomes. Developers do more themselves without agents but may know the whole codebase better. Recognize that work while maintaining demanding quality and reliability expectations.
 
-## AI-assisted — demand more from agent leverage
+## AI-assisted: higher expectations through delegation
 
-Developers can delegate research, implementation, testing and repetitive tasks. Expect greater delivery capability and stronger verification than for purely human-led development, **not AI adoption for its own sake**. Require demonstrated impact on quality, speed/cost or reliability plus approved context, human accountability, effective independent test oracles and enforced security/release gates. Recommend task-specific skills agents can execute.
+Developers can delegate investigation, implementation, testing and routine work. Demand stronger delivery capability and independent verification than for conventional teams—not AI adoption as a goal. Verify real impact on speed, cost, reliability and test/security outcomes; appropriate permissions, human accountability and independent gates are essential.
 
-## AI-driven — highest standard of results and independent controls
+## AI-driven: highest bar and measurable results
 
-Agents do most work: demand **strongest measurable results and sustained trends**, along with scoped permissions, sandboxes, independent quality gates/oracles, provenance, change authorization, recovery and telemetry. Process activity is not proof of delivered value. **Without measured outcomes**, issue a sharply limited judgment (4 ceiling) and propose a rigorous **instrumentation skill** defining and measuring request-to-user lead time, genuine deployments, user-facing failure/recovery and availability, quality and relevant cost, with provenance, baselines and a review cadence.
+Agents perform most work. Demand the strongest demonstrated outcomes and trends, independent test oracles, bounded privileges, provenance, non-bypassable release controls, recovery and telemetry. Without measured output, give a sharply limited verdict (internal ceiling 4) and recommend a rigorous **measurement/instrumentation agent skill** with event definitions, data provenance, baselines and ongoing review.
 
-All perspectives see the same observations; the required standard rises with automation. Do not project hypothetical improvements as measured facts.
+## Be candid, proportionate and useful
+
+- **Weak:** Say plainly that delivery is below the expected standard; identify observed failures or evidence gaps, consequences and the few changes that matter most. Avoid euphemisms. Judge delivery systems, not individuals.
+- **Good:** Give **earned praise** tied to specific observed results or practices, while pointing to credible further gains and how to achieve them.
+- **Excellent:** Identify precisely which **sustained, independently substantiated results** meet the gold standard, and tell the team to **keep it up**. Do not invent weaknesses or compulsory improvement tasks.
+- **Unproven:** If evidence is insufficient, say that success cannot be established—not that the team is poor or excellent.
+
+Do not copy the same judgment three times with different labels: differences in required capability and assurance should materially affect each perspective. Never invent measurements or claim hypothetical gains as actual results.

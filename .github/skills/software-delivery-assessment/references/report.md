@@ -1,11 +1,13 @@
-# Executive judgment — maximum three paragraphs
+# Three separate, concise leadership judgments
 
-**Audience:** lead developers and CTOs. **Length:** approximately 150–250 words, no more than **three prose paragraphs or one sheet**. Judge the selected perspective (conventional by default). Give a **clear qualitative grade and rationale, not a numeric rating or score table** unless the user explicitly requests a number; then follow [calibration](perspectives.md).
+**Always produce three independent Markdown outcome files:** conventional, AI-assisted and AI-driven. Use sensible filenames and paths chosen for the service (e.g. `assessment-conventional.md`, `assessment-ai-assisted.md`, `assessment-ai-driven.md`). Identify perspective, assessed service/revision, period and a few decisive evidence references. **Each judgment: at most three paragraphs / one page** (aim 150–250 words), for lead developers and CTOs. No number or weighted score by default; if explicitly requested, use [internal calibration](perspectives.md).
 
-**Paragraph 1 — Verdict and results.** State the perspective and judgment, explaining observed delivery outcomes: speed, reliability/recovery, cost or value and user results when evidenced. State plainly when outcomes are not measured.
+**Paragraph 1 — Candid verdict and actual outcomes.** State clearly whether results are weak, good or truly excellent for this perspective and why. Discuss evidenced speed, reliability, recovery, cost/value and user outcomes. Do not sugarcoat poor results or pretend that unavailable measurements exist.
 
-**Paragraph 2 — Why.** Weigh sustained success versus isolated anecdotes, independent evidence, code and test quality, SRE/operational practices and material security/release risks. Distinguish verified from provisional assertions. Without measured results, never claim a strong proven delivery system.
+**Paragraph 2 — Evidence and confidence.** Tie praise or criticism to specific records, history, code and test quality, mature SRE practice and critical safeguards. Say what remains unknown. Excellent demands a sustained, credible trail, not a good-looking repository.
 
-**Paragraph 3 — Improvement.** Describe one to three specific changes that would most improve outcomes or assurance. Refer briefly to any task-specific agent improvement skills prepared as **separate files**. If AI-driven measurements are absent, prioritize a rigorous output instrumentation skill.
+**Paragraph 3 — Improve or sustain.** For poor delivery, identify concrete high-impact corrections; for good delivery, acknowledge strengths and realistic gains; for excellent delivery, explicitly say **continue what demonstrably works**. No forced shortcomings. Mention any proposed agent-ready improvement skill only briefly; full skills are separate documents. AI-driven missing outcome evidence requires a rigorous measurement skill recommendation.
 
-**Separate deliverables:** Full evidence ledger, detailed metric values, extra perspective comparisons and complete improvement `SKILL.md` files may be supplied separately upon request or as assessment artifacts. They do not enlarge the executive judgment.
+**Presentation:** The user's selected perspective (conventional by default) is the **only judgment displayed in the conversational summary**; provide access to the other two files and allow later selection **without rerunning**. Keep outcomes distinct, do not silently overwrite historical runs, and do not claim a file is saved or committed without confirmation.
+
+**Permission:** Generating three separate copy-ready Markdown artifacts is the fallback where repository writing is not authorized. Creating or updating files in the assessed repository requires explicit permission. Supporting ledgers and remediation skills are separate artifacts and do not enlarge the three-paragraph judgment.

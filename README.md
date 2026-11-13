@@ -2,7 +2,7 @@
 
 A concise, evidence-first [software delivery assessment skill](.github/skills/software-delivery-assessment/SKILL.md) for GitHub Copilot and compatible coding agents.
 
-It starts with **real delivery outcomes**, investigates meaningful gaps and verifies critical controls. For the selected conventional, AI-assisted or AI-driven perspective, it produces a **three-paragraph qualitative leadership judgment** and drafts separate agent-ready improvement skills—no numeric rating by default.
+It starts with **real delivery outcomes**, investigates meaningful gaps and verifies critical controls. It **evaluates conventional, AI-assisted and AI-driven delivery in every run**, produces **three separate evidence-based Markdown judgments**, and shows the **user-selected perspective** (conventional by default). It praises demonstrated excellence, gives candid corrective feedback on weaker performance, and drafts separate agent-ready improvement skills.
 
 ## Use
 

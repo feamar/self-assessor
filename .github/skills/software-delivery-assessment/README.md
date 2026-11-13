@@ -1,6 +1,6 @@
 # Software Delivery Assessment skill
 
-An evidence-first GitHub Copilot agent skill that delivers a **concise qualitative verdict** for one selected **conventional, AI-assisted or AI-driven** perspective. Strong delivery outcomes, critical controls and expert judgment replace arbitrary numeric weights.
+An evidence-first Copilot skill that **evaluates all three perspectives in every run**, prepares **three separate Markdown judgments** and **displays the perspective chosen by the user** (conventional by default). Critical, evidence-specific feedback replaces vague encouragement and arbitrary scores.
 
 ## Use
 
@@ -8,7 +8,7 @@ Copy this folder to `.github/skills/software-delivery-assessment/` in the target
 
 > Assess this service from the AI-driven perspective in three short paragraphs and prepare agent-ready skills for consequential improvements.
 
-Default perspective: conventional. Main report: **three paragraphs maximum / one sheet**, readable by lead developers and CTOs. A numerical grade is optional only on explicit request; the private 0–10 calibration requires strong evidence for high grades. AI-driven missing outcome data calls for a measurement skill.
+All three perspectives are assessed from the same evidence. **Each outcome is at most three paragraphs / one page**, for lead developers and CTOs. The selected one is shown; the other two remain available as files. Weak delivery gets clear corrections, good delivery receives earned praise and next steps, and genuinely excellent delivery receives explicit evidence-based recognition. Numeric grades are optional on request.
 
 - `SKILL.md` — workflow and safeguards
 - `references/perspectives.md` — perspective standards and calibration
@@ -16,4 +16,4 @@ Default perspective: conventional. Main report: **three paragraphs maximum / one
 - `references/remediation-skills.md` — executable improvement skills as separate artifacts
 - `references/metrics.md`, `dimensions.md`, `evidence.md` — measurement and evidence support
 
-Read-only by default. Accessing external systems, running tests, writing skill files and changing product code require permission. Architectural decisions are logged in `docs/adr/` as maintainer history.
+Read-only by default. If writing assessment results to the target repository is not authorized, provide three separate Markdown artifacts instead. External access, running tests, writing files and changing product code require permission. Architectural decisions are logged in `docs/adr/` as maintainer history.

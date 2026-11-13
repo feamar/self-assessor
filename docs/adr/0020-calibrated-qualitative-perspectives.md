@@ -15,3 +15,5 @@ Conventional expects strong engineering and SRE with human effort and whole-code
 ## Consequences
 
 No composite score, formula, AI adoption bonus or invented metrics. Evidence, customer results, cost, code/test quality and critical risks determine the explanation. Numerical calibration remains an internal guardrail unless requested.
+
+**Updated by [ADR-0024](0024-all-perspectives-separate-outcomes.md):** the one-selected-perspective execution rule is superseded. All three perspectives now run; the evidence calibration remains valid.

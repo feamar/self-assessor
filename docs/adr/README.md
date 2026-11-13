@@ -51,3 +51,10 @@ D03 remains a conditional diagnostic: its measurement is straightforward where t
 | Replace weighted scores with calibrated qualitative perspective judgments | [ADR-0020](0020-calibrated-qualitative-perspectives.md) |
 | Limit executive assessment to three paragraphs | [ADR-0021](0021-three-paragraph-report.md) |
 | Draft independent agent skills for justified improvements | [ADR-0022](0022-agent-improvement-skills.md) |
+
+## Feedback and outcome artifacts
+
+| Decision | ADR |
+|---|---|
+| Give candid evidence-specific criticism, earned praise and exact reasons for excellence | [ADR-0023](0023-candid-evidence-specific-feedback.md) |
+| Always evaluate all three perspectives, store separate Markdown outcomes and show the user's selection | [ADR-0024](0024-all-perspectives-separate-outcomes.md) |

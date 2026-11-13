@@ -13,3 +13,5 @@ Default report is **at most three paragraphs and one page**: (1) qualitative gra
 ## Consequences
 
 The assessment remains decision-ready and explicit about missing outcomes. A concise report cannot be mistaken for an exhaustive technical audit.
+
+**Updated by [ADR-0024](0024-all-perspectives-separate-outcomes.md):** the three-paragraph format applies to each of three outcome files; only the user-selected result is shown.
