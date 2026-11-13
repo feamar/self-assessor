@@ -18,11 +18,11 @@ Additional conditional outcomes: first-pass acceptance yield and change-related 
 | ID | Measure or targeted question |
 |---|---|
 | D03 | Change failure rate when linked events exist; otherwise ask about the last failed release |
-| D09 | Requirement-to-test linkage when meaningful links exist; otherwise ask how a critical acceptance requirement is verified |
-| D14 | Observed flaky tests / slow or misleading test feedback; identify consequential examples |
+| D09 | **Non-universal diagnostic:** requirement-to-test linkage when meaningful links exist; otherwise ask how a critical acceptance requirement is verified |
+| D14 | **Non-universal diagnostic:** observed flaky tests / slow or misleading test feedback; identify consequential examples |
 | D23 | Detection time for user impact when timestamps exist; otherwise ask how degradation is discovered |
 
-D03 and D09 can be **simple in a suitable environment**. Do not downgrade the intrinsic metric just because the current environment lacks records.
+D03 and D09 can be **simple in a suitable environment**. Do not downgrade simplicity merely because current records are missing. **D09 and D14 are deliberately retained despite not being universal**; use them only when relevant ([ADR-0017](../../../../docs/adr/0017-retain-non-universal-diagnostics.md)).
 
 ## Essential assurance questions
 

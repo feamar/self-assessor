@@ -18,8 +18,8 @@ The first four are default metrics when applicable. The last two are **condition
 ## 2. Targeted diagnostics
 
 - **D03 — Change failure rate:** failed production changes / relevant changes. Simple **when** change and incident/rollback events are explicitly linked. Otherwise ask what happened to the most recent failed release and label the rate unknown.
-- **D09 — Requirement-to-test linkage:** linked requirements / relevant requirements. Simple **when** requirements and tests have native, meaningful links. It is a **process proxy**, not an outcome score. Otherwise ask how an important acceptance requirement is verified.
-- **D14 — Flaky test feedback:** use observed reruns/intermittent outcomes if directly recorded; otherwise inspect recent test reliability evidence.
+- **D09 — Requirement-to-test linkage (non-universal):** linked requirements / relevant requirements. Simple **when** requirements and tests have native, meaningful links. It is a **process proxy**, not an outcome score. Otherwise ask how an important acceptance requirement is verified.
+- **D14 — Flaky test feedback (non-universal):** use observed reruns/intermittent outcomes if directly recorded; otherwise inspect recent test reliability evidence.
 - **D23 — Time to detect user impact:** use observed incident/monitoring timestamps where trustworthy; otherwise ask how degradation would be noticed.
 
 Do **not** calculate deployment rework rate, mutation score, failure-mode coverage, architecture conformance percentage, security findings hypothetically prevented, vulnerability exposure time, business-impact index, incident recurrence rate or alert actionability rate as default metrics. Do not substitute TDD/BDD adoption, ADR totals, PR size, progressive rollout use or automation percentage as outcome metrics. See [ADRs](../../../../docs/adr/README.md) for rationale.
@@ -37,5 +37,7 @@ Use focused questions and concrete evidence for test effectiveness, release/roll
 | Output oriented | Measures what is achieved rather than compliance with a process |
 | Universal | Underlying principle applies across domains with possible wording changes |
 | Transparent | The measured thing and how to determine its value are unambiguous |
+
+**Universality is preferred for headline outcome metrics, not an absolute requirement for useful specialist diagnostics.** D09 and D14 are explicitly accepted as optional non-universal diagnostics ([ADR-0017](../../../../docs/adr/0017-retain-non-universal-diagnostics.md)).
 
 **Lead time is the 5/5 reference.** Smaller batches and faster deployment are genuine capability improvements, not gaming. Distinguish a badly defined event from a weakness in the intrinsic metric. Data availability is a feasibility question, not metric strength.

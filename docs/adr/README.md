@@ -24,4 +24,10 @@ These are **architecture decision records**, not agent instructions. They docume
 | D29 | Retired | [0015-d29-delivery-automation-and-manual-intervention.md](0015-d29-delivery-automation-and-manual-intervention.md) |
 | D30 | Reframed | [0016-d30-operational-monitoring-alerting-and-sre-practice.md](0016-d30-operational-monitoring-alerting-and-sre-practice.md) |
 
-**D03 and D09 stay available as conditional diagnostics:** their measurement is straightforward where the environment maintains reliable linked events; otherwise ask a focused question or report unknown. No ADR is needed for their retention.
+## Retained specialist-metric exceptions
+
+| IDs | Decision | ADR |
+|---|---|---|
+| D09, D14 | Retained as optional non-universal diagnostics | [ADR-0017](0017-retain-non-universal-diagnostics.md) |
+
+D03 remains a conditional diagnostic: its measurement is straightforward where the environment maintains reliable linked events; otherwise ask a focused question or report unknown.
