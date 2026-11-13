@@ -25,3 +25,5 @@ Where an agent cannot fetch the remote URL, **fail clearly rather than pretendin
 The usual start is one line and does not require manually copying the skill into a product repository **when remote access is available**. Support remains conditional on the Copilot host's retrieval permissions and the developer's open workspace. Native skill activation and universal one-line URL behavior across all Copilot clients **cannot be guaranteed by repository files**; use the tested native install mechanism when necessary. A future smoke test should validate the actual host's URL retrieval and three-outcome workflow.
 
 The root README and START.md are operational entrypoints; this ADR records the design decision, while the existing skill and ADRs 0023–0025 continue to govern assessment content and reporting.
+
+**Clarified by [ADR-0027](0027-high-reasoning-preflight-both-ides.md):** the developer may use **Microsoft Visual Studio or VS Code**, and both require a High-reasoning startup check before the assessment. VS Code's `#fetch` mechanism is not assumed to exist in Visual Studio.

@@ -42,6 +42,7 @@ This is the **authoritative status index**. Decisions in **Active** govern the c
 | Assess all three perspectives; preserve separate Markdown outcomes and display the selected one | [ADR-0024](0024-all-perspectives-separate-outcomes.md) |
 | Active judgment calibration and three-paragraph report policy | [ADR-0025](0025-consolidated-judgment-and-report-policy.md) |
 | Bootstrapping from a workstation via `Start https://github.com/feamar/self-assessor/` | [ADR-0026](0026-remote-url-bootstrap.md) |
+| Require High Copilot thinking effort before assessment in Visual Studio or VS Code | [ADR-0027](0027-high-reasoning-preflight-both-ides.md) |
 
 ## Inactive — historical or superseded
 
