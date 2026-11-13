@@ -8,7 +8,7 @@ Inspect representative architecture, security-sensitive paths, recent substantiv
 
 ## CI/CD and release history
 
-Read pipeline configuration **and** approved historical runs. Sample successful and failed runs, gate decisions, exceptions, artifact digests, PR/change linkage, promotions, deployment outcomes and rollback. Use explicit service boundary and date window (default 90 days). For metrics record numerator, denominator, source, timestamps, inclusion/exclusion rules and missing events. Use event counts and distributions; no fabricated DORA percentiles or universal thresholds. Configuration alone does not establish enforcement.
+Read pipeline configuration **and** approved historical runs. For primary metrics, trace requests from arrival to user-available delivery, not only commit-to-production; correlate changes with user impact and acceptance/rework events where available. Sample successful and failed runs, gate decisions, exceptions, artifact digests, PR/change linkage, promotions, deployment outcomes and rollback. Use explicit service boundary and date window (default 90 days). For metrics record numerator, denominator, source, timestamps, inclusion/exclusion rules and missing events. Use event counts and distributions; no fabricated DORA percentiles or universal thresholds. Configuration alone does not establish enforcement.
 
 ## SRE and operational evidence
 

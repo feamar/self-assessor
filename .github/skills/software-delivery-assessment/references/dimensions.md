@@ -1,10 +1,12 @@
-# Dimension rubric
+# Dimension inventory
+
+The 30 dimensions are **investigation topics**, not 30 equally strong metrics. Use the [three-layer model](metrics.md): primary outcomes first, diagnostics to explain them, and assurance controls to establish acceptable risk. Do not average dimension scores into delivery quality. Each dimension's optional 0–4 rubric is diagnostic evidence only.
 
 Assess one service over an explicit period. For every dimension use **0** demonstrably absent/ineffective, **1** ad hoc/manual, **2** repeatable but partial, **3** enforced and evidenced across meaningful scope, **4** measured over time, independently challenged and improved. Apply these anchors to the dimension-specific behavior below; an assertion of practice alone is not evidence of enforcement. **Unknown** is not 0; **N/A** requires a rationale.
 
 | ID | Dimension | Inspect / test for |
 |---|---|---|
-| D01 | Change lead time | Linked change-to-production timestamps, distribution, trends and bottlenecks |
+| D01 | End-to-end lead time | Request-to-user-available timestamps, distribution, trends and bottlenecks; retain commit-to-production as diagnostic |
 | D02 | Deployment frequency | Successful production deployment events per service and period |
 | D03 | Change fail rate | Changes causing incidents, rollback or remediation; explicit denominator |
 | D04 | Failed deployment recovery | Recovery events, elapsed times and actual restoration |
@@ -37,7 +39,7 @@ Assess one service over an explicit period. For every dimension use **0** demons
 
 ## Dimension-specific interpretation
 
-- For **D01–D05**, do not impose universal "good" DORA thresholds. Show observed counts, percentiles and service context; configuration is not measurement.
+- For **D01–D05**, do not impose universal "good" DORA thresholds. For D01 start at demand entering the process, not first commit. Show observed counts, percentiles and service context; configuration is not measurement.
 - For **D09–D15**, inspect test bodies and critical requirements, not just names, counts or coverage percentage. A high coverage number does not prove correctness.
 - For **D16–D21**, verify applicable organizational standards before asserting compliance. A policy file proves a rule exists, not that it is enforced. Flag bypassable critical gates.
 - For **D22–D24 and D26–D30**, require historical incident, deployment and monitoring evidence for high scores. One interview about the last failed release is a useful probe, not proof of a trend.

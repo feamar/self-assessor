@@ -1,44 +1,16 @@
-# Perspectives and score policy
+# Three perspectives
 
-The **same observed facts** apply to all perspectives. No backward-compatible legacy score is required.
+All three perspectives share the **same observed delivery outcomes** from [metrics](metrics.md). Do not compute arbitrarily weighted composite scores.
 
-## Delivery quality Q
+| Perspective | Question to answer | Additional assurance |
+|---|---|---|
+| **Conventional** | How quickly, correctly and reliably can this system deliver change? | Code/test effectiveness, security, architecture, release and operational controls |
+| **AI-assisted** | Can people use AI while retaining the same outcomes and independent quality/security guarantees? | Approved tools/data, architecture grounding, human accountability, independent tests and CI gates, provenance and measured impact |
+| **AI-driven** | Can bounded agents deliver changes under independent verifiable controls? | Scoped context, sandboxing, least privilege, prompt-injection defenses, independent specifications/tests, no self-approval, accountable promotion, rollback and telemetry |
 
-Use applicable observed **D01–D24 and D26–D30** (29 common dimensions). D25 is AI-specific and excluded from Q.
+## Evidence expectations
 
-`Q = 25 × sum(common scores) / count(scored applicable common dimensions)` (0–100). Report **coverage = scored / applicable** and whether the calculation is verified or provisional. Unknown dimensions do not count as zeros. Do not present a partial average as complete maturity.
-
-A full headline requires at least **80% coverage** of applicable common dimensions **and inspected evidence for all applicable critical dimensions**. Otherwise label the value **partial / insufficient evidence**.
-
-## AI-assisted A (six checks)
-
-| ID | Capability to verify |
-|---|---|
-| A01 | Approved AI tools, data boundaries and permissions |
-| A02 | Approved architecture/security standards guide generated changes |
-| A03 | AI-assisted specification, TDD/BDD and independent test oracles |
-| A04 | Human steering, accountable review and enforced approvals |
-| A05 | Independent CI/test/security feedback on AI-authored changes |
-| A06 | Measured impact, provenance and adverse-trend transparency |
-
-## AI-driven R (seven checks)
-
-| ID | Capability to verify |
-|---|---|
-| R01 | Bounded multi-step agency with observed task outcomes |
-| R02 | Versioned approved policy and context grounding |
-| R03 | Independent specifications/tests detect generated faults |
-| R04 | Sandboxes, least privilege and prompt-injection protections |
-| R05 | Independent build/test/security gates; no self-approval |
-| R06 | Traceable changes, accountable promotion and rollback |
-| R07 | Production results, incidents and continuous validation |
-
-Rate readiness checks 0–4 with the same evidence anchors as dimensions. **Confirmed absence of AI integration** means readiness 0, not lower Q. **Unknown AI use** means unknown readiness, not 0. Readiness averages: `A = 25 × mean(scored A checks)`; `R = 25 × mean(scored R checks)`. State coverage. D25 must be evidenced for a full AI headline.
-
-## Perspective scores
-
-- **Conventional:** `Q`
-- **AI-assisted:** `0.60 × Q + 0.40 × A`
-- **AI-driven:** `0.50 × Q + 0.50 × R`
-
-Weights are **assessor policy**, not empirically validated benchmarks. Report selected perspective first and the other computable perspectives for context. For an AI headline require full common-dimension coverage threshold, all applicable readiness checks assessed, and D25 evidenced; otherwise label it partial. Never claim a verified score from interview-only evidence. Show critical findings separately regardless of arithmetic.
+- Report actual outcome measures once, then **perspective-specific capabilities, gaps and risks**. Do not present hypothetical AI improvements as measured results.
+- AI-assisted checks: approved tools/permissions; approved engineering rules; independent tests/oracles; human approval where required; CI/security gates; provenance and impact.
+- AI-driven checks: proven bounded autonomy; approved policy/context; independent verification; sandbox/permissions; non-bypassable gates; accountable release/rollback; production feedback.
+- Distinguish **verified**, **provisional**, **unknown** and **N/A** judgments. No AI use does not reduce conventional delivery quality; AI readiness may still be absent or unassessed.

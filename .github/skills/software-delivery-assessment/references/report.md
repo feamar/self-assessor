@@ -1,25 +1,30 @@
 # Report format
 
-**Default: short and decision-ready.** Provide a detailed ledger or JSON only if requested or necessary to make a disputed score auditable.
+**Default: one concise decision-ready assessment.** Offer detailed evidence ledgers only on request.
 
-## Summary
+## Scope
 
-- **Scope:** service, repository/commit, assessment dates, sources available/missing.
-- **Selected perspective:** score /100 or **partial / insufficient evidence**, verified/provisional, and coverage. Show other computable perspectives in one line.
-- **Verdict:** 2–4 sentences on delivery quality and uncertainty.
-- **Critical risks:** blocking findings with evidence IDs; never hide behind averages.
-- **Code quality:** separate, evidence-backed judgment with sampled examples.
-- **Test quality:** separate, evidence-backed judgment with sampled examples.
-- **Next actions:** 3–5 prioritized, specific verification or improvement steps, with expected benefit.
+Service/repository/revision, demand-to-delivery boundary, assessment period, available sources and consequential gaps.
 
-## Scorecard
+## Layer 1 — Primary outcomes
 
-For **all 30 dimensions**, record `ID | 0–4 / unknown / N/A | verified / provisional | evidence IDs | concise rationale`. Include readiness A01–A06 and R01–R07 when relevant. Group rows by delivery, testing, architecture/security, reliability and AI. Show coverage and score calculations, with actual denominators.
+| Metric | Observed value / distribution | Period and sample size | Definition/source | Confidence / unknowns |
+|---|---|---|---|---|
 
-## Evidence ledger (on request)
+Include end-to-end lead time, deployment frequency, recovery, user-facing unavailability, first-pass acceptance and change-related disruption when relevant. **Do not substitute arbitrary 0–4 maturity scores for measured values.** Describe trends and limitations.
 
-For each finding: evidence ID, type (O/X/P/E/I/C), exact source (path and lines, URL/run ID or report page), revision/date range, what it demonstrates, limitations, contradictions and confidence. Include executed commands only when authorized and actual results, not invented outputs. For imported reports, show disagreements and scan-scope mismatches. Preserve uncertainty and distinguish claims from direct observation.
+## Layer 2 — Diagnostic findings
 
-## Decision rule
+List the few findings that best explain outcomes and opportunities. Distinguish **code quality** from **test quality**. Reference exact evidence and note where an observation is provisional. Use the 30 dimensions as a checklist for targeted investigation, not an equally weighted total.
 
-A partial numeric value is an **observed-only illustration**, never a full verified maturity score. Critical failures are reported regardless of average. Do not call the output an independent certification, compliance determination or penetration test.
+## Layer 3 — Assurance controls
+
+Show effective/broken/unknown critical controls, consequences and evidence. Explicitly flag security, privacy, supply chain, release safety and AI permission risks even if delivery outcomes look good.
+
+## Perspectives
+
+Summarize **conventional**, **AI-assisted** and **AI-driven** capability using the same outcome data plus perspective-specific assurance. No arbitrary weighted combined score. Conclude with 3–5 actionable priorities.
+
+## Optional appendix
+
+For each relevant dimension: status, supporting evidence IDs, confidence and concise rationale. If 0–4 rubric scores are used diagnostically, do **not** average them. On request include evidence types, paths/lines, run IDs, exact periods, commands actually run with consent, disagreements, and calculation details. Unavailable information is unknown, never zero.

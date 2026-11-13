@@ -1,6 +1,6 @@
 # Software Delivery Assessment skill
 
-A read-only, evidence-first GitHub Copilot agent skill for assessing one service's software delivery. It evaluates **30 dimensions**, code and tests separately, and conventional, AI-assisted and AI-driven perspectives.
+A read-only, evidence-first GitHub Copilot agent skill for assessing one service's software delivery. It uses **three layers** (delivery outcomes, diagnostic metrics and assurance controls), investigates 30 dimensions without averaging them, evaluates code and tests separately, and compares conventional, AI-assisted and AI-driven perspectives.
 
 ## Install
 
@@ -15,7 +15,8 @@ The assessor does not edit product files or deploy anything. Builds, tests, scan
 ## Files
 
 - `SKILL.md`: operational workflow and guardrails
-- `references/dimensions.md`: 30 assessment dimensions and scoring anchors
+- `references/metrics.md`: three-layer model, primary metrics and metric-strength criteria
+- `references/dimensions.md`: 30 investigation dimensions and diagnostic scoring anchors
 - `references/perspectives.md`: perspective-specific readiness and scoring
 - `references/evidence.md`: repository, CI/CD, SRE and external report guidance
 - `references/report.md`: concise report and optional detailed ledger
