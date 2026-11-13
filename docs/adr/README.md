@@ -31,3 +31,9 @@ These are **architecture decision records**, not agent instructions. They docume
 | D09, D14 | Retained as optional non-universal diagnostics | [ADR-0017](0017-retain-non-universal-diagnostics.md) |
 
 D03 remains a conditional diagnostic: its measurement is straightforward where the environment maintains reliable linked events; otherwise ask a focused question or report unknown.
+
+## Repository governance
+
+| Decision | ADR |
+|---|---|
+| Record every accepted architectural decision alongside the change | [ADR-0018](0018-document-all-architectural-decisions.md) |

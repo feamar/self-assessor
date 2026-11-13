@@ -14,3 +14,7 @@ Copy `.github/skills/software-delivery-assessment/` to your target repository or
 - [Architecture decision records](docs/adr/README.md)
 
 The skill operates read-only unless additional permissions are granted. Missing measurements remain unknown.
+
+## Architecture decision policy
+
+Every accepted architectural change must include a corresponding [ADR](docs/adr/README.md) in the same commit; exploratory discussions and editorial changes do not require one.
