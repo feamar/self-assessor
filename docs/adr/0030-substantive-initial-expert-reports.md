@@ -21,3 +21,5 @@ The optional team-lead output, if requested after reporting, now adds **deeper t
 ## Consequences
 
 Initial output is longer, better structured and more explanatory. It remains evidence-first and perspective-specific, with no fabricated metrics or mandatory filler. ADRs 0024, 0025 and 0029 become inactive so the ADR index has one clear current reporting contract.
+
+**Extended by [ADR-0032](0032-ranked-top-ten-improvement-factors.md), [ADR-0033](0033-verify-and-recommend-outcome-dora-dashboard.md) and [ADR-0034](0034-mandatory-final-qualitative-verdict.md):** each initial report now contains ranked improvements, an explicit outcome/DORA measurement/dashboard assessment and a clearly labeled concluding qualitative overall verdict.

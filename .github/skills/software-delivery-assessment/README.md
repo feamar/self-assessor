@@ -1,6 +1,6 @@
 # Software Delivery Assessment skill
 
-An evidence-first Copilot skill for **Visual Studio or VS Code**, requiring **High reasoning effort or an explicit exception before assessment**, that **first seeks CI/CD, SonarQube, test, operational and applicable OpenShift synchronization/rollout evidence**, then evaluates all three perspectives and produces **three substantial 5–10-page Markdown expert reports**, displaying the user's choice. The initial reports include the full reasoning and material concerns. A deeper technical appendix is optional. Critical, evidence-specific feedback replaces vague encouragement and arbitrary scores.
+An evidence-first Copilot skill for **Visual Studio or VS Code**, requiring **High reasoning effort or an explicit exception before assessment**, that **first seeks CI/CD, SonarQube, test, operational and applicable OpenShift synchronization/rollout evidence**, then evaluates all three perspectives and produces **three substantial 5–10-page Markdown expert reports**, each with an evidence-based **top ten ranked improvements**, a check of **delivery/DORA metrics and dashboard**, and a **final qualitative Overall score**, displaying the user's choice. The initial reports include the full reasoning and material concerns. A deeper technical appendix is optional. Critical, evidence-specific feedback replaces vague encouragement and arbitrary scores.
 
 ## Use
 
@@ -14,7 +14,9 @@ An evidence-first Copilot skill for **Visual Studio or VS Code**, requiring **Hi
 
 - `SKILL.md` — workflow and safeguards
 - `references/perspectives.md` — perspective standards and calibration
-- `references/report.md` — initial 5–10-page expert perspective reports
+- `references/report.md` — initial 5–10-page expert perspective reports and required final verdict
+- `references/measurement-dashboard.md` — outcome/DORA measurement and dashboard recommendations
+- `references/improvement-ranking.md` — reasoned top-ten improvement prioritization
 - `references/team-lead-report.md` — **optional, post-assessment technical implementation appendix**
 - `references/remediation-skills.md` — **optional, only after the report and the developer's opt-in**
 - `references/metrics.md`, `dimensions.md`, `evidence.md` — measurement and evidence support

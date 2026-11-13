@@ -4,6 +4,10 @@ The active assessment has **18 dimensions: 4 primary outcome metrics, 4 conditio
 
 A metric is useful only if it measures a clear result. Define events, unit, period, scope, source, sample size and exclusions; report actual values and trends. **Do not turn missing data into a zero or invent a maturity score.**
 
+## Measure and review the results—not merely the practices
+
+The assessor must **look for an existing, regularly maintained delivery-outcomes/DORA dashboard**. If outcome measurements are missing, recommend a **small, transparent dashboard backed by real source events**, using [measurement-dashboard.md](measurement-dashboard.md). Include end-to-end demand-to-user lead time and real deployment frequency; user-facing unavailability and actual recovery where events exist. Add a DORA-oriented view (change lead time, deployment frequency, change failure rate and failure recovery) **when directly observable**. Technical **change lead time** and end-to-end **lead time** are different clocks; show both distinctly when useful. Never fabricate missing rates or reintroduce retired D05 deployment rework as a compulsory metric. A dashboard itself is not an outcome metric or a substitute for actual improvement.
+
 ## 1. Primary outcomes
 
 | Outcome | Measurement |

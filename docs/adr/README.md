@@ -40,6 +40,9 @@ This is the **authoritative status index**. Decisions in **Active** govern the c
 | Gather and corroborate evidence first; offer agent skills only after reporting and explicit opt-in | [ADR-0028](0028-evidence-first-report-before-optional-agent-skills.md) |
 | Full 5–10-page initial expert reports, independent three perspectives, calibrated verdict and optional implementation appendix | [ADR-0030](0030-substantive-initial-expert-reports.md) |
 | OpenShift synchronization/rollout logs and open-ended evidence discovery | [ADR-0031](0031-openshift-sync-and-open-ended-evidence.md) |
+| Ranked top ten evidence-supported improvement factors per perspective | [ADR-0032](0032-ranked-top-ten-improvement-factors.md) |
+| Inspect and recommend outcome/DORA dashboard when measurement is genuinely missing | [ADR-0033](0033-verify-and-recommend-outcome-dora-dashboard.md) |
+| End each report with a clear final verdict and qualitative overall score | [ADR-0034](0034-mandatory-final-qualitative-verdict.md) |
 | Provide candid criticism, earned praise and precise recognition of excellence | [ADR-0023](0023-candid-evidence-specific-feedback.md) |
 | Bootstrapping from a workstation via `Start https://github.com/feamar/self-assessor/` | [ADR-0026](0026-remote-url-bootstrap.md) |
 | Require High Copilot thinking effort before assessment in Visual Studio or VS Code | [ADR-0027](0027-high-reasoning-preflight-both-ides.md) |

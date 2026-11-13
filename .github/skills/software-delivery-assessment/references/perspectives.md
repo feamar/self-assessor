@@ -1,6 +1,6 @@
 # Calibrated perspective-specific judgments
 
-**Always evaluate all three perspectives in each run.** Share the evidence collection, but reason separately for conventional, AI-assisted and AI-driven delivery. Each perspective produces its own **substantial 5–10-page Markdown expert report** with the evidence, explanation, strengths, material concerns, calibrated rationale and recommendations in the initial output. The user's choice determines which judgment is **displayed**, not which are evaluated. Default display: conventional. No weighted formulas, maturity averages or numeric grades unless expressly requested.
+**Always evaluate all three perspectives in each run.** Share the evidence collection, but reason separately for conventional, AI-assisted and AI-driven delivery. In every report, **conclude with an explicit qualitative Overall score** and **rank up to ten meaningful improvement factors** in a deliberate order, including measurement/feedback capability when relevant. Each perspective produces its own **substantial 5–10-page Markdown expert report** with the evidence, explanation, strengths, material concerns, calibrated rationale and recommendations in the initial output. The user's choice determines which judgment is **displayed**, not which are evaluated. Default display: conventional. No weighted formulas, maturity averages or numeric grades unless expressly requested.
 
 ## Internal 0–10 calibration (not default output)
 
@@ -11,7 +11,7 @@
 | Strong, independently checkable history of repeated success | **9/10** possible, not automatic |
 | Exceptional sustained results comparable in substance to strong Google engineering circa the mid-2010s and mature Google SRE | **10/10**, exceptionally |
 
-These are ceilings, not a calculation. The 8 ceiling **requires some objective outcome evidence**; absent that, the 4 ceiling applies. Critical risks can justify weaker judgments.
+The visible **Overall score is qualitative**: **Excellent**, **Good**, **Satisfactory**, **Needs improvement**, **Unsatisfactory**, or **Not demonstrated (insufficient evidence)**. Do not map these labels mechanically to numbers or infer Satisfactory from an absence of observed incidents. Explain the basis for the label. **A dashboard's existence is a means to understand outcomes, not proof of outcomes.** These are ceilings, not a calculation. The 8 ceiling **requires some objective outcome evidence**; absent that, the 4 ceiling applies. Critical risks can justify weaker judgments.
 
 ## Conventional: demanding human-led delivery
 
