@@ -1,6 +1,6 @@
 # ADR-0029: Optional evidence-backed detailed report for team leads
 
-**Status:** Accepted — active  
+**Status:** Superseded / inactive — see [ADR-0030](0030-substantive-initial-expert-reports.md)  
 **Extends:** [ADR-0025](0025-consolidated-judgment-and-report-policy.md), [ADR-0028](0028-evidence-first-report-before-optional-agent-skills.md)
 
 ## Context
@@ -20,3 +20,5 @@ This **optional detailed report is independent of optional agent instructions**:
 ## Consequences
 
 The default user experience remains **three concise, candid reports**, showing the selected one. A team lead can later obtain an evidence-traceable, actionable explanation without repeating collection or sacrificing brevity. Agent instructions remain an additional, separately requested follow-up. The reference [team-lead-report.md](../../.github/skills/software-delivery-assessment/references/team-lead-report.md) defines the report's content.
+
+**Historical note:** [ADR-0030](0030-substantive-initial-expert-reports.md) replaces the previous short-format rule while retaining all-three-perspectives, calibration, and optional post-report work.

@@ -6,7 +6,7 @@
 
 After inspecting the accessible workspace, **proactively ask once** if the developer can point you to the most valuable missing sources. Keep it short and conversational, not a mandatory form:
 
-> Can you point me to the CI/CD pipeline and deployment history, SonarQube or other code-quality reporting, and any test, monitoring or incident results? URLs, report exports or an approved read-only way to access them are fine.
+> Can you point me to CI/CD and deployment history, SonarQube or other quality reporting, test and monitoring/incident results, and **OpenShift synchronization/rollout logs if used**? **Is there other evidence we should examine**—customer feedback, change requests, support data or costs? Approved links or redacted exports are fine.
 
 Use what is already available instead of making the developer repeat it. Follow up only for evidence that would materially change a judgment. If sources are unavailable, finish the assessment with **explicit evidence limitations**; do not assume either good or bad performance.
 
@@ -15,11 +15,12 @@ Use what is already available instead of making the developer repeat it. Follow 
 1. **Delivered results:** Request/demand and user-available delivery records, genuine production deployment events, reliability/SLO dashboards, production incidents and recovery, service costs and customer outcomes where available. Look for multi-period trends, not anecdotes.
 2. **CI/CD history:** Build/test pipeline **runs**, actual checks and failures, gate decisions, promotions/deployments and release traceability. A pipeline configuration does **not** demonstrate historical execution or effectiveness.
 3. **Quality and tests:** SonarQube or equivalent code-quality and security results, BonCode/other reports if provided, test runs, defect trends and representative code/test inspection. Corroborate findings with the assessed revision and actual release gating; don't blindly trust vendor scores.
-4. **Supporting records:** Issue/requirement tracking, incident reviews, operational logs and relevant architecture/security rules or exceptions. Treat interviews as provisional unless corroborated.
+4. **OpenShift/GitOps synchronization and release events where applicable:** Inspect approved read-only OpenShift GitOps/Argo CD sync and controller history, Flux reconciliations or equivalent deployment events, retries/errors/drift and rollout/health records. Map time, app/namespace/environment, source/manifest revision and sync/rollout result to CI promotion and actual production availability. **Synchronization is not deployment, successful release or user outcome**. Beware clock skew, incomplete log retention and manual overrides.
+5. **Other evidence:** Issue tracking, support tickets, user feedback, incident reviews, financial/effort evidence and relevant architecture/security rules. Treat interviews as provisional unless corroborated. **Ask whether any other meaningful source exists** before finalizing, then finish with explicit limitations if unavailable.
 
-Retain a concise **evidence ledger** of references, source revision/date, period, finding and confidence where possible, so a later requested detailed team-lead report can be prepared **without repeating the assessment or inventing evidence**. Distinguish demonstrated concerns from unverified risks or unknowns; do not publish private data in the report.
+Retain a traceable **evidence ledger** of source references, revision/date, periods, observations, confidence and disagreement. Feed it directly into the **initial expert reports**, not just an optional appendix. Distinguish demonstrated concerns from unverified risks or unknowns; do not publish private data in the report.
 
-Request necessary approval before opening external systems. Accept read-only URLs or sanitized report exports; **never request credentials or confidential payloads**.
+Request permission before accessing external/cluster systems or running CLI commands. OpenShift and GitOps logs may contain tokens, internal URLs, environment variables or protected information; prefer approved read-only views or sanitized exports. **Never request credentials, secrets or raw confidential payloads**. Missing OpenShift access is an evidence gap, not proof of a failed synchronization.
 
 - **Requests and deliveries:** Locate genuine demand-arrival events and user-available delivery events; avoid treating first commit as end-to-end lead-time start. Validate production deployment counts and recovery/unavailability records.
 - **Conditional diagnostics:** D03 requires identifiable changed deployments and linked failures. D09 requires a naturally maintained requirement-to-test relationship. If either is missing, ask one focused question; never fabricate a rate.

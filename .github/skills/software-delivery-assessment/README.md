@@ -1,6 +1,6 @@
 # Software Delivery Assessment skill
 
-An evidence-first Copilot skill for **Visual Studio or VS Code**, requiring **High reasoning effort or an explicit exception before assessment**, that **first seeks real CI/CD, SonarQube, code-quality, test and operational evidence**, then evaluates all three perspectives, prepares **three separate Markdown judgments** and **displays the perspective chosen by the user** (conventional by default). A longer evidence-based **team-lead findings report is available only on request, after these judgments**. Critical, evidence-specific feedback replaces vague encouragement and arbitrary scores.
+An evidence-first Copilot skill for **Visual Studio or VS Code**, requiring **High reasoning effort or an explicit exception before assessment**, that **first seeks CI/CD, SonarQube, test, operational and applicable OpenShift synchronization/rollout evidence**, then evaluates all three perspectives and produces **three substantial 5–10-page Markdown expert reports**, displaying the user's choice. The initial reports include the full reasoning and material concerns. A deeper technical appendix is optional. Critical, evidence-specific feedback replaces vague encouragement and arbitrary scores.
 
 ## Use
 
@@ -8,15 +8,15 @@ An evidence-first Copilot skill for **Visual Studio or VS Code**, requiring **Hi
 
 **Alternatively**, install this skill to a recognized project/personal skills location and ask:
 
-> Assess this service. Ask me where CI/CD history, SonarQube and other reporting can be found if not already accessible, and produce the three short perspective judgments. Show the conventional one.
+> Assess this service. Ask where CI/CD history, SonarQube, OpenShift synchronization logs and other relevant evidence can be found. Ask whether further sources exist. Produce three detailed expert perspective reports, showing conventional.
 
-**Evidence collection is the priority.** Prompt the developer for relevant missing pipeline/report sources, inspect historical runs and outcomes, and be transparent about gaps. All three perspectives are assessed from the same evidence. **Each outcome is at most three paragraphs / one page**, for lead developers and CTOs. The selected one is shown; the other two remain available as files. Weak delivery gets clear corrections, good delivery receives earned praise and next steps, and genuinely excellent delivery receives explicit evidence-based recognition. Numeric grades are optional on request.
+**Evidence collection is the priority.** Prompt the developer for relevant missing pipeline/report sources, inspect historical runs and outcomes, and be transparent about gaps. All three perspectives are assessed from the same evidence. **Each initial report targets 5–10 printed pages of substantive explanation**, for lead developers and CTOs. The selected one is shown; the other two remain available as files. Weak delivery gets clear corrections, good delivery receives earned praise and next steps, and genuinely excellent delivery receives explicit evidence-based recognition. Numeric grades are optional on request.
 
 - `SKILL.md` — workflow and safeguards
 - `references/perspectives.md` — perspective standards and calibration
-- `references/report.md` — three concise leadership judgments
-- `references/team-lead-report.md` — **optional, post-assessment detailed concerns and improvements**
+- `references/report.md` — initial 5–10-page expert perspective reports
+- `references/team-lead-report.md` — **optional, post-assessment technical implementation appendix**
 - `references/remediation-skills.md` — **optional, only after the report and the developer's opt-in**
 - `references/metrics.md`, `dimensions.md`, `evidence.md` — measurement and evidence support
 
-**Only after presenting the reports**, offer an optional detailed team-lead report of concerns, evidence and improvements. Agent instructions are an **independent** optional follow-up; do not prepare either in advance. Read-only by default. If writing assessment results to the target repository is not authorized, provide three separate Markdown artifacts instead. External access, running tests, writing files and changing product code require permission. Architectural decisions are logged in `docs/adr/` as maintainer history.
+**Only after presenting the full expert reports**, optionally offer a deeper technical appendix for team leads. Agent instructions are an **independent** optional follow-up; do not prepare either in advance. Read-only by default. If writing assessment results to the target repository is not authorized, provide three separate Markdown artifacts instead. External access, running tests, writing files and changing product code require permission. Architectural decisions are logged in `docs/adr/` as maintainer history.

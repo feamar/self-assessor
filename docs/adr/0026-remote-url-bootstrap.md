@@ -29,3 +29,5 @@ The root README and START.md are operational entrypoints; this ADR records the d
 **Clarified by [ADR-0027](0027-high-reasoning-preflight-both-ides.md):** the developer may use **Microsoft Visual Studio or VS Code**, and both require a High-reasoning startup check before the assessment. VS Code's `#fetch` mechanism is not assumed to exist in Visual Studio.
 
 **Refined by [ADR-0028](0028-evidence-first-report-before-optional-agent-skills.md):** remote startup now actively seeks CI/CD, SonarQube and operational evidence and completes the three reports **before** offering optional agent instructions. It does not generate agent skills automatically.
+
+**Updated by [ADR-0030](0030-substantive-initial-expert-reports.md) and [ADR-0031](0031-openshift-sync-and-open-ended-evidence.md):** startup seeks OpenShift/GitOps history and produces substantial initial expert assessments.

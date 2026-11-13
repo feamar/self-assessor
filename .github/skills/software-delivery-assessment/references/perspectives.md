@@ -1,6 +1,6 @@
 # Calibrated perspective-specific judgments
 
-**Always evaluate all three perspectives in each run.** Share the evidence collection, but reason separately for conventional, AI-assisted and AI-driven delivery. Each perspective produces its own qualitative judgment. The user's choice determines which judgment is **displayed**, not which are evaluated. Default display: conventional. No weighted formulas, maturity averages or numeric grades unless expressly requested.
+**Always evaluate all three perspectives in each run.** Share the evidence collection, but reason separately for conventional, AI-assisted and AI-driven delivery. Each perspective produces its own **substantial 5–10-page Markdown expert report** with the evidence, explanation, strengths, material concerns, calibrated rationale and recommendations in the initial output. The user's choice determines which judgment is **displayed**, not which are evaluated. Default display: conventional. No weighted formulas, maturity averages or numeric grades unless expressly requested.
 
 ## Internal 0–10 calibration (not default output)
 

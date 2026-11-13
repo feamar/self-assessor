@@ -1,6 +1,6 @@
 # ADR-0025: Consolidate the currently active judgment and report policy
 
-**Status:** Accepted — active  
+**Status:** Superseded / inactive — see [ADR-0030](0030-substantive-initial-expert-reports.md)  
 **Supersedes:** [ADR-0020](0020-calibrated-qualitative-perspectives.md) and [ADR-0021](0021-three-paragraph-report.md) as complete documents. Their substantive calibration and brevity rules remain here; their older one-perspective wording is obsolete.  
 **Consistent with:** [ADR-0023](0023-candid-evidence-specific-feedback.md) and [ADR-0024](0024-all-perspectives-separate-outcomes.md).
 
@@ -28,3 +28,5 @@ Outcome documents or agent skills are **drafted as separate artifacts** if targe
 ADR-0020 and ADR-0021 become **inactive/superseded** without losing their historical record. This ADR is the active source for their surviving calibration and reporting constraints. ADR-0023 continues to govern candid feedback and ADR-0024 the all-perspective output workflow.
 
 **Refined by [ADR-0028](0028-evidence-first-report-before-optional-agent-skills.md):** evidence discovery and the three completed judgments precede any **optional** agent-skill drafting; the developer must opt in after the report.
+
+**Historical note:** [ADR-0030](0030-substantive-initial-expert-reports.md) replaces the previous short-format rule while retaining all-three-perspectives, calibration, and optional post-report work.

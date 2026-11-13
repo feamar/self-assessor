@@ -38,10 +38,9 @@ This is the **authoritative status index**. Decisions in **Active** govern the c
 |---|---|
 | Record every accepted architectural decision in an ADR | [ADR-0018](0018-document-all-architectural-decisions.md) |
 | Gather and corroborate evidence first; offer agent skills only after reporting and explicit opt-in | [ADR-0028](0028-evidence-first-report-before-optional-agent-skills.md) |
-| Offer an evidence-backed detailed team-lead findings report on demand, after the three judgments | [ADR-0029](0029-optional-evidence-backed-team-lead-report.md) |
+| Full 5–10-page initial expert reports, independent three perspectives, calibrated verdict and optional implementation appendix | [ADR-0030](0030-substantive-initial-expert-reports.md) |
+| OpenShift synchronization/rollout logs and open-ended evidence discovery | [ADR-0031](0031-openshift-sync-and-open-ended-evidence.md) |
 | Provide candid criticism, earned praise and precise recognition of excellence | [ADR-0023](0023-candid-evidence-specific-feedback.md) |
-| Assess all three perspectives; preserve separate Markdown outcomes and display the selected one | [ADR-0024](0024-all-perspectives-separate-outcomes.md) |
-| Active judgment calibration and three-paragraph report policy | [ADR-0025](0025-consolidated-judgment-and-report-policy.md) |
 | Bootstrapping from a workstation via `Start https://github.com/feamar/self-assessor/` | [ADR-0026](0026-remote-url-bootstrap.md) |
 | Require High Copilot thinking effort before assessment in Visual Studio or VS Code | [ADR-0027](0027-high-reasoning-preflight-both-ides.md) |
 
@@ -53,5 +52,8 @@ This is the **authoritative status index**. Decisions in **Active** govern the c
 | [ADR-0020](0020-calibrated-qualitative-perspectives.md) | Superseded; original one-selected-perspective rule obsolete | [ADR-0025](0025-consolidated-judgment-and-report-policy.md), [ADR-0024](0024-all-perspectives-separate-outcomes.md) |
 | [ADR-0021](0021-three-paragraph-report.md) | Superseded; original single-report framing replaced by three independent reports | [ADR-0025](0025-consolidated-judgment-and-report-policy.md) |
 | [ADR-0022](0022-agent-improvement-skills.md) | Superseded: automatic drafting of agent skills before/alongside reports is no longer the default | [ADR-0028](0028-evidence-first-report-before-optional-agent-skills.md) |
+| [ADR-0024](0024-all-perspectives-separate-outcomes.md) | Superseded former three-paragraph output contract; the three perspectives remain required | [ADR-0030](0030-substantive-initial-expert-reports.md) |
+| [ADR-0025](0025-consolidated-judgment-and-report-policy.md) | Superseded former three-paragraph/one-page executive format | [ADR-0030](0030-substantive-initial-expert-reports.md) |
+| [ADR-0029](0029-optional-evidence-backed-team-lead-report.md) | Core expert explanation is no longer deferred to an optional detailed report | [ADR-0030](0030-substantive-initial-expert-reports.md) |
 
 **Historical lineage:** 24 documented initial dimensions → 25 after transparency was added → 30 in the expanded pilot → 18 active checks after simplification. The historical ADR-0000 is descriptive, **not a directive to restore old measures**.
