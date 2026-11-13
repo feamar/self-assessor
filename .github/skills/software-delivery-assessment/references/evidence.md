@@ -17,6 +17,8 @@ Use what is already available instead of making the developer repeat it. Follow 
 3. **Quality and tests:** SonarQube or equivalent code-quality and security results, BonCode/other reports if provided, test runs, defect trends and representative code/test inspection. Corroborate findings with the assessed revision and actual release gating; don't blindly trust vendor scores.
 4. **Supporting records:** Issue/requirement tracking, incident reviews, operational logs and relevant architecture/security rules or exceptions. Treat interviews as provisional unless corroborated.
 
+Retain a concise **evidence ledger** of references, source revision/date, period, finding and confidence where possible, so a later requested detailed team-lead report can be prepared **without repeating the assessment or inventing evidence**. Distinguish demonstrated concerns from unverified risks or unknowns; do not publish private data in the report.
+
 Request necessary approval before opening external systems. Accept read-only URLs or sanitized report exports; **never request credentials or confidential payloads**.
 
 - **Requests and deliveries:** Locate genuine demand-arrival events and user-available delivery events; avoid treating first commit as end-to-end lead-time start. Validate production deployment counts and recovery/unavailability records.

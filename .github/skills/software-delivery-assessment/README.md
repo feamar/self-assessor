@@ -1,6 +1,6 @@
 # Software Delivery Assessment skill
 
-An evidence-first Copilot skill for **Visual Studio or VS Code**, requiring **High reasoning effort or an explicit exception before assessment**, that **first seeks real CI/CD, SonarQube, code-quality, test and operational evidence**, then evaluates all three perspectives, prepares **three separate Markdown judgments** and **displays the perspective chosen by the user** (conventional by default). Critical, evidence-specific feedback replaces vague encouragement and arbitrary scores.
+An evidence-first Copilot skill for **Visual Studio or VS Code**, requiring **High reasoning effort or an explicit exception before assessment**, that **first seeks real CI/CD, SonarQube, code-quality, test and operational evidence**, then evaluates all three perspectives, prepares **three separate Markdown judgments** and **displays the perspective chosen by the user** (conventional by default). A longer evidence-based **team-lead findings report is available only on request, after these judgments**. Critical, evidence-specific feedback replaces vague encouragement and arbitrary scores.
 
 ## Use
 
@@ -14,8 +14,9 @@ An evidence-first Copilot skill for **Visual Studio or VS Code**, requiring **Hi
 
 - `SKILL.md` — workflow and safeguards
 - `references/perspectives.md` — perspective standards and calibration
-- `references/report.md` — leadership report format
+- `references/report.md` — three concise leadership judgments
+- `references/team-lead-report.md` — **optional, post-assessment detailed concerns and improvements**
 - `references/remediation-skills.md` — **optional, only after the report and the developer's opt-in**
 - `references/metrics.md`, `dimensions.md`, `evidence.md` — measurement and evidence support
 
-**Only after presenting the reports**, offer an optional next step to draft instructions for future agents; do not prepare them in advance. Read-only by default. If writing assessment results to the target repository is not authorized, provide three separate Markdown artifacts instead. External access, running tests, writing files and changing product code require permission. Architectural decisions are logged in `docs/adr/` as maintainer history.
+**Only after presenting the reports**, offer an optional detailed team-lead report of concerns, evidence and improvements. Agent instructions are an **independent** optional follow-up; do not prepare either in advance. Read-only by default. If writing assessment results to the target repository is not authorized, provide three separate Markdown artifacts instead. External access, running tests, writing files and changing product code require permission. Architectural decisions are logged in `docs/adr/` as maintainer history.

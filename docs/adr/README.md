@@ -38,6 +38,7 @@ This is the **authoritative status index**. Decisions in **Active** govern the c
 |---|---|
 | Record every accepted architectural decision in an ADR | [ADR-0018](0018-document-all-architectural-decisions.md) |
 | Gather and corroborate evidence first; offer agent skills only after reporting and explicit opt-in | [ADR-0028](0028-evidence-first-report-before-optional-agent-skills.md) |
+| Offer an evidence-backed detailed team-lead findings report on demand, after the three judgments | [ADR-0029](0029-optional-evidence-backed-team-lead-report.md) |
 | Provide candid criticism, earned praise and precise recognition of excellence | [ADR-0023](0023-candid-evidence-specific-feedback.md) |
 | Assess all three perspectives; preserve separate Markdown outcomes and display the selected one | [ADR-0024](0024-all-perspectives-separate-outcomes.md) |
 | Active judgment calibration and three-paragraph report policy | [ADR-0025](0025-consolidated-judgment-and-report-policy.md) |
