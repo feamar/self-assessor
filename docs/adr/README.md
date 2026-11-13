@@ -43,3 +43,11 @@ D03 remains a conditional diagnostic: its measurement is straightforward where t
 | Decision | ADR |
 |---|---|
 | Distinguish outcome orientation from hard-to-game; name the 18 dimensions correctly | [ADR-0019](0019-separate-outcome-orientation-from-gameability.md) |
+
+## Perspective judgments, reports and agent actions
+
+| Decision | ADR |
+|---|---|
+| Replace weighted scores with calibrated qualitative perspective judgments | [ADR-0020](0020-calibrated-qualitative-perspectives.md) |
+| Limit executive assessment to three paragraphs | [ADR-0021](0021-three-paragraph-report.md) |
+| Draft independent agent skills for justified improvements | [ADR-0022](0022-agent-improvement-skills.md) |
