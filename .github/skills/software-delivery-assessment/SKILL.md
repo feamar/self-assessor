@@ -5,7 +5,7 @@ description: Evidence-first assessment from all three software delivery perspect
 
 # Software Delivery Assessment
 
-Assess one service's delivery capability, not its people. **Measure results, judge candidly, recommend specific improvements.**
+Assess one service's delivery capability, not its people. **Measure results, judge candidly, recommend specific improvements.** When invoked via the repository URL, first complete [remote bootstrap](../../../START.md); the source repository is not the assessment target.
 
 1. **Scope:** Establish service, revision, assessment period (default 90 days), approved evidence and which perspective the user wants **shown** (default **conventional**). The selection affects presentation, not which perspectives are assessed.
 2. **Investigate once:** Read [metrics](references/metrics.md), relevant [checks](references/dimensions.md) and [evidence](references/evidence.md). Inspect available delivery speed, production outcomes, reliability/recovery, user value, costs, code/test quality and critical controls. Ask only consequential gap questions. Do not invent evidence.

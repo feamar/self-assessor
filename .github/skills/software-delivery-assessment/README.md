@@ -4,7 +4,9 @@ An evidence-first Copilot skill that **evaluates all three perspectives in every
 
 ## Use
 
-Copy this folder to `.github/skills/software-delivery-assessment/` in the target repository (or supported personal skills location), then ask:
+**Preferred:** With the product repository open in GitHub Copilot Agent mode, type `Start https://github.com/feamar/self-assessor/`. The repository root [START.md](../../../START.md) bootstraps the full skill through remote files; it is not native automatic skill discovery and depends on the Copilot host's URL-fetch capability. If that fails, use the `#fetch` fallback or `gh skill install` documented in the [root README](../../../README.md).
+
+**Alternatively**, install this skill to a recognized project/personal skills location and ask:
 
 > Assess this service from the AI-driven perspective in three short paragraphs and prepare agent-ready skills for consequential improvements.
 
