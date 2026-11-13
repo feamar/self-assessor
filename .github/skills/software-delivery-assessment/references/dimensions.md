@@ -1,6 +1,6 @@
 # Active investigation checks
 
-**Only these 18 original IDs remain active.** They are a small menu of measurements and consequential questions, **not** 18 scores or a compulsory questionnaire. Start with primary outcomes, then select diagnostics or assurance questions only when relevant. Retired and reframed decisions are documented in [ADRs](../../../../docs/adr/README.md).
+**18 active dimensions: 4 primary outcome metrics, 4 optional diagnostics or diagnostic questions and 10 essential assurance questions.** They are a small menu of measurements and consequential questions, **not** 18 scores or a compulsory questionnaire. Start with primary outcomes, then select diagnostics or assurance questions only when relevant. Retired and reframed decisions are documented in [ADRs](../../../../docs/adr/README.md).
 
 ## Outcome measurements
 

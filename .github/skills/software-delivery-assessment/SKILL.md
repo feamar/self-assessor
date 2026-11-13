@@ -13,7 +13,9 @@ Assess one service and its delivery system, not people. **Measure outcomes first
 4. **Assure:** Verify consequential security, privacy, supply-chain, release and AI controls through evidence or precise questions. Never infer control effectiveness from policy alone.
 5. **Report:** Use [report](references/report.md). Present outcomes, diagnostic findings, assurance risks and the [three perspectives](references/perspectives.md), followed by 3–5 priorities.
 
-**Metric filter:** Prefer simple, hard-to-game, outcome-oriented, universal and transparent **primary metrics**. A non-universal specialist metric may be retained as an **optional diagnostic** where it provides useful, clear evidence (D09 and D14; [ADR-0017](../../../../docs/adr/0017-retain-non-universal-diagnostics.md)). Reject convoluted or ambiguous headline metrics; use a concrete question when the concern is essential. Do not enforce TDD, BDD, automation, change-size or documentation rituals as delivery quality measures.
+**Metric filter:** Prefer simple, hard-to-game, outcome-oriented, universal and transparent **primary metrics**. Evaluate **outcome-oriented** (does it measure a result, not process compliance?) separately from **hard to game** (can its value improve without improving its intended result?). They are independent criteria. A non-universal specialist metric may be retained as an **optional diagnostic** where it provides useful, clear evidence (D09 and D14; [ADR-0017](../../../../docs/adr/0017-retain-non-universal-diagnostics.md)). Reject convoluted or ambiguous headline metrics; use a concrete question when the concern is essential. Do not enforce TDD, BDD, automation, change-size or documentation rituals as delivery quality measures.
+
+**Model size:** 18 active dimensions = 4 primary outcome metrics + 4 conditional diagnostics/diagnostic questions + 10 essential assurance questions. Not all 18 are numerical metrics.
 
 **Evidence:** Separate observed repository/CI/production records from interviews; preserve source, window, exclusions and uncertainty. Review code quality and test quality separately. No weighted average of dimensions or perspective scores.
 

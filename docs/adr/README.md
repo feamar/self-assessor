@@ -37,3 +37,9 @@ D03 remains a conditional diagnostic: its measurement is straightforward where t
 | Decision | ADR |
 |---|---|
 | Record every accepted architectural decision alongside the change | [ADR-0018](0018-document-all-architectural-decisions.md) |
+
+## Metric-strength interpretation
+
+| Decision | ADR |
+|---|---|
+| Distinguish outcome orientation from hard-to-game; name the 18 dimensions correctly | [ADR-0019](0019-separate-outcome-orientation-from-gameability.md) |

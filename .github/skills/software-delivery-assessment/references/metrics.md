@@ -1,5 +1,7 @@
 # Strong metrics and three layers
 
+The active assessment has **18 dimensions: 4 primary outcome metrics, 4 conditional diagnostics/diagnostic questions and 10 essential assurance questions**. Do not call all 18 numerical metrics.
+
 A metric is useful only if it measures a clear result. Define events, unit, period, scope, source, sample size and exclusions; report actual values and trends. **Do not turn missing data into a zero or invent a maturity score.**
 
 ## 1. Primary outcomes
@@ -33,11 +35,13 @@ Use focused questions and concrete evidence for test effectiveness, release/roll
 | Criterion | Strong when |
 |---|---|
 | Simple | The result is trivially available from the process, non-convoluted and explainable to a layperson |
-| Hard to game | Improving it requires improving the intended result or capability |
-| Output oriented | Measures what is achieved rather than compliance with a process |
+| Hard to game | Optimizing the metric cannot be done without improving the result it is intended to represent, regardless of whether the metric concerns a process or outcome |
+| Output oriented | Measures an actual result, not whether people follow a prescribed process; **this says nothing by itself about gameability** |
 | Universal | Underlying principle applies across domains with possible wording changes |
 | Transparent | The measured thing and how to determine its value are unambiguous |
 
 **Universality is preferred for headline outcome metrics, not an absolute requirement for useful specialist diagnostics.** D09 and D14 are explicitly accepted as optional non-universal diagnostics ([ADR-0017](../../../../docs/adr/0017-retain-non-universal-diagnostics.md)).
+
+**Separate the tests.** D09 requirement-to-test linkage is process-oriented (links exist), and may also be gameable (superficial links can raise the percentage): two distinct weaknesses. D14 flakiness measures a testing-process outcome (stable feedback); assess whether that metric can be gamed independently. See [ADR-0019](../../../../docs/adr/0019-separate-outcome-orientation-from-gameability.md).
 
 **Lead time is the 5/5 reference.** Smaller batches and faster deployment are genuine capability improvements, not gaming. Distinguish a badly defined event from a weakness in the intrinsic metric. Data availability is a feasibility question, not metric strength.
